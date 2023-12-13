@@ -13,7 +13,7 @@ const app = express();
 
 //servidor
 app.listen(PUERTO);
-console.log(`El servidor esta escuchando en el ${app.get("port")}`);
+console.log(`El servidor esta escuchando en el ${PUERTO}`);
 console.log(`http://localhost:${PUERTO}`);
 
 //Configuracion de css js y img
