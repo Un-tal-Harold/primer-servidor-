@@ -5,7 +5,7 @@ const mensajeError = document.getElementsByClassName("error")[0];
 document.getElementById('register-form').addEventListener('submit',async(e)=>{
     e.preventDefault();
     //console.log(e.target.children.name.value);
-    const res = await fetch('http://localhost:3000/api/registro',{
+    const res = await fetch('/api/registro',{
         method:"POST",
         headers:{
             "Content-Type":"application/json"
