@@ -9,7 +9,7 @@ import {metons as autorizacion} from "./middlewares/autorizacion.js"
 
 //express
 const app = express();
-const PUERTO = 3000;
+const PUERTO = process.env.PORT || 3000;
 
 //servidor
 app.set("port",PUERTO);
