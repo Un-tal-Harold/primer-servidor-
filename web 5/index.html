@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <title>Reloj Digital</title>
+</head>
+<body>
+    <aside id="contenedor" class="contenedor">
+        <article id="contenedor-num" class="contenedor-num">
+            <h1 id="cronometro" class="cronometro">00:00:00</h1>
+        </article>
+        <article id="contenedor-botones" class="contenedor-botones">
+            <button type="button" id="boton-iniciar" class="boton pausar">
+                <i class="bi bi-play-fill"></i>
+            </button>
+            <button type="button" id="boton-reiniciar">
+                <i class="bi bi-arrow-counterclockwise"></i>
+            </button>
+        </article>
+    </aside>
+    <article id="contenedor-salida">
+        <button type="button" id="regresar">
+            <i class="bi bi-arrow-return-left"></i>
+        </button>
+        <button type="button" id="cerrar" class="cerrar">
+            <i class="bi bi-door-closed"></i>
+        </button>
+    </article>
+    <script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+body {
+    /**/
+
+    --s: 200px;
+    /* control the size */
+    --c: #fff;
+    /* first color */
+
+    --_g: #0000 8%, var(--c) 0 17%, #0000 0 58%;
+    background:
+        linear-gradient(135deg, #0000 20.5%, var(--c) 0 29.5%, #0000 0) 0 calc(var(--s)/4),
+        linear-gradient(45deg, var(--_g)) calc(var(--s)/2) 0,
+        linear-gradient(135deg, var(--_g), var(--c) 0 67%, #0000 0),
+        linear-gradient(45deg, var(--_g), var(--c) 0 67%, #0000 0 83%, var(--c) 0 92%, #0000 0),
+        #4693bd;
+    /* second color */
+    background-size: var(--s) var(--s);
+
+    /**/
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+aside {
+    width: 92%;
+    max-width: 450px;
+    height: 450px;
+    background-color: white;
+    border-radius: 4%;
+    display: inline;
+    opacity: 0.98;
+    box-shadow: 0px 0px 9px 0px rgb(70, 147, 189);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 3px 6px;
+    padding: 8px 16px;
+    width: 89%;
+}
+
+button {
+    background-color:#4693bd;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.sr-only {
+    position: absolute;
+    left: -100000000000000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+input,
+button{
+    margin: 1%;
+    border: unset;
+    padding: 15px 30px;
+}
+
+#link-registrar {
+    margin: 2%;
+    height: fit-content;
+    text-align: center;
+}
+.login{
+    padding: 10 20px;
+    margin: 10px;
+}
+.error{
+    text-align: center;
+    color: rgb(255, 39, 39);
+    padding:0;
+    margin: 0%;
+}
+.escondido{
+    display: none;
+}
+form+p {
+    text-align: center;
+}
+figure{
+    width: 30px;
+    height: 30px;
+}

@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primera app web </title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <aside id="cont-form" class="cont-form">
+        <form id="formulario">
+            <h1>Iniciar sesion</h1>
+            <p>Ingresa tus credenciales para acceder al area de administracion</p>
+            <label for="user" class="sr-only">Usuario</label>
+            <input type="text" name="user" class="login" id="user" placeholder="Nombre de usuario">
+            <label for="password" class="sr-only">Contraseña</label>
+            <input type="password" name="password" class="login" id="password" placeholder="Contraseña">
+            <button type="submit" class="login">Inicia secion</button>
+            <p class="error escondido">Error al iniciar secion por favor verifique usuario y contraseña</p>
+        </form>
+        <p id="link-registrar">¿Todoavia no tienes una cuenta? - <a href="/registro">Registrate</a></p>
+    </aside>
+    <script src="/js/login.js"></script>
+</body>
+
+</html>
