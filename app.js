@@ -8,14 +8,13 @@ import cookieParser from "cookie-parser";
 import {metons as autorizacion} from "./middlewares/autorizacion.js"
 
 //express
-const app = express();
 const PUERTO = process.env.PORT || 3000;
+const app = express();
 
 //servidor
-app.set("port",PUERTO);
-app.listen(app.get("port"));
+app.listen(PUERTO);
 console.log(`El servidor esta escuchando en el ${app.get("port")}`);
-console.log(`http://localhost:${app.get("port")}`);
+console.log(`http://localhost:${PUERTO}`);
 
 //Configuracion de css js y img
 
